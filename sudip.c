@@ -1,35 +1,32 @@
-/* Name:Sudip Kuikel
-Subject:Programming Fundamental
-Program:Write a program that asks the name student and marks obtained by him/her in seven subjects.
-
-Display the percentage of student assuming full marks 100
-Lab no.3 */
+/*
+ Student Name:Sudip Kuikel
+ * Subject: Programming fundamentals
+ * Roll:
+ * lab no:
+ * Program:Print your name
+ * date:17th oct 2016
+ */
 #include<stdio.h>
-#include<conio.h>
 
-void main ()
+int main()
 {
-char name[10];
-float math,science,english,economics,computer,social,gk,total,percent;
-printf("Name of student\n\n\n");
-scanf("%s,&name");
-printf("\n\nMath: ");
-scanf("%f",&math);
-printf("Science: ");
-scanf("%f",&science);
-printf("English: ");
-scanf("%f",&english);
-printf("Economics: ");
-scanf("%f",&economics);
-printf("Computer: ");
-scanf("%f",&computer);
-printf("Social: ");
-scanf("%f",&social);
-printf("GK:");
-scanf("%f",&gk);
-total=math+science+english+economics+computer+social+gk;
-printf("total marks =%f",total);
-percent=(total/7)*100;
-printf("\nPercentage=%d",percent);
-getch();
+float x,y,add,sub,mul,div,s;
+printf("Enter value of X:");
+scanf("%f",&x);
+printf("Enter value of Y:");
+scanf("%f",&y);
+add=x+y;
+printf("\n \t %f + %f =%f",x,y,add);
+sub=x-y;
+printf("\n \t %f - %f =%f",x,y,sub);
+mul=x*y;
+printf("\n \t%f * %f =%f",x,y,mul);
+div=x/y;
+printf("\n \t %f / %f =%f",x,y,div);
+s=y%x;
+printf("\n \t %f %% %f=%f",x,y,s);
+return 0;
 }
+
+
+
